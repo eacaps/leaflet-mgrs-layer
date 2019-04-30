@@ -1,0 +1,29 @@
+{
+  "name": "leaflet-mgrs-layer",
+  "version": "0.1.0",
+  "description": "Leaflet layer that provides an autoscaling MGRS grid",
+  "main": "leaflet-mgrs-layer.js",
+  "dependencies": {},
+  "devDependencies": {
+    "express": "^4.16.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eacaps/leaflet-mgrs-layer.git"
+  },
+  "keywords": [
+    "leaflet",
+    "mgrs",
+    "es6"
+  ],
+  "author": "eacaps",
+  "license": "Unlicense",
+  "bugs": {
+    "url": "https://github.com/eacaps/leaflet-mgrs-layer/issues"
+  },
+  "homepage": "https://github.com/eacaps/leaflet-mgrs-layer#readme"
+}
