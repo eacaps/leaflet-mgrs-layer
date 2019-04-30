@@ -1,6 +1,24 @@
 <html>
-	<head>Leaflet MGRS layer</head>
+	<head>
+			<link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+			integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+			crossorigin=""/>
+			<script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+   integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+   crossorigin=""></script>
+		<title>Leaflet MGRS layer</title>
+		<style>
+			#mapid { height: 500px; width: 500px}
+		</style>
+	</head>
 	<body>
-		map goes here
+		<div id="mapid"></div>
 	</body>
+	<script>
+		var mymap = L.map('mapid').setView([51.505, -0.09], 13);
+		L.tileLayer('https://c.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+			maxZoom: 18,
+			id: 'osm_map',
+		}).addTo(mymap);
+	</script>
 </html>
